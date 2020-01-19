@@ -5,7 +5,7 @@ resources:
 - repo: self
 
 variables:
-  # subscription: ''
+  # subscription: ggg''
   # acrName: ''
   # resourceGroup: ''
   deployfrom: 'Deploy'
