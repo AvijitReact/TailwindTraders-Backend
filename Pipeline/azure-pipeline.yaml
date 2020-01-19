@@ -60,7 +60,7 @@ jobs:
     inputs:
       azureSubscription: '$(subscription)'
       scriptLocation: 'inlineScript'
-      inlineScript: 'pwsh -Command .\Build-Push.ps1 -resourceGroup $(resourceGroup) -acrName $(acrName) -dockerTag $(Build.BuildId) -isWindowsMachine 1'
+      inlineScript: 'pwsh -Command .\Build-Push.ps1 -resourceGroup $(resourceGroup) -acrName $(acrName) -dockerTag $(Build.BuildId) -isLinuxMachine 1'
       addSpnToEnvironment: true
       useGlobalConfig: true
       workingDirectory: 'Deploy\powershell'
