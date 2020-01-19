@@ -49,7 +49,7 @@ jobs:
       command: 'restore'
       restoreSolution: '**/Tailwind.Traders.Backend.Rewards.sln'
       feedsToUse: 'select'
-  - task: MSBuild@1
+  - task: VSBuild@1
     inputs:
       solution: '**/Tailwind.Traders.Rewards.Registration.Api.csproj'
       msbuildArchitecture: 'x64'
